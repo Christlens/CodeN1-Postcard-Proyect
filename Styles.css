@@ -1,48 +1,93 @@
-#body {
-    font-family: 'EB Garamond', serif;
+body {
+    background-color: #121212;
+    width: 100%;
+    height: 600px;
+}
+
+/*Digital Postcard Layout*/
+
+.dp_layout {
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
     font-size: larger;
-    border: 5px black solid;
-    width: 500px;
-    height: 400px;
-    margin: 200px 225px 200px 225px;
+    background-color: white;
+    width: 455px;
+    height: 330px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
 }
 
-#block {
+/*Header layout*/
+
+.header {
     display: flex;
+    columns: 2;
+    width: 100%;
+    height: 60px;
 }
-
+.h1_div {
+    width: 250px;
+    padding: 6px 0px 6px 0px;
+    margin-right: 125px;
+}
 #h1 {
-    float: left;
-    width: 450px;
-    height: 100px;
-    border: 5px;
     margin: 0px;
 }
 
-#img_4geeks {
+/*Content Layout*/
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    columns: 2;
+}
+.paragraph {
     box-sizing: border-box;
-    border: 5px;
-    height: 110px;
-    margin: 0px;
+    width: 45%;
+    height: 180px;
+    text-align: justify; 
+    line-height: 1.1;
 }
-
 #p {
-    border: 5px;
-    float: left;
-    width: 255px;
-    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
 }
-
-#bottom {
-    border-style: outset; 
-    width: 150px;
-    margin: auto;
-}
-
-#form {
+.form {
     box-sizing: border-box;
-    border: 5px;
-    height: 250px;
-    padding: 50px 10px;
+    width: 55%;
+    height: 180px;
+    text-align: center;
+    padding: 25px 0px 54.2px 10px;
+}
+input[type=text] {
+    font-family: 'Caveat', cursive;
+    font-size: larger;
+    width: 83%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+/*Footer Layout*/
+
+.footer { 
+    width: 100%;
+    height: 25px;
+    padding: 1px 0px 1px 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+#button {
+    font-family: 'Caveat', cursive;
+    border: outset;
+    width: 130px;
+    height: 25px;
+}
+#button:hover {
+    transition-duration: 0s;
+    background-color: antiquewhite;
+    color: black;
 }
